@@ -1,0 +1,30 @@
+!HYPE!
+pechat("Hello, HypeScript!");
+name = vhod("Your name: ");
+pechat("Privet, "+name+"!");
+esli (name == "Hype") {
+  pechat("You're hyped!");
+} inache {
+  pechat("Stay hyped!");
+}
+
+// while
+i = 0;
+poka (i < 3) {
+  pechat("i=", i);
+  i = i + 1;
+}
+
+// for
+dlya (j = 0; j < 3; j = j + 1) {
+  esli (j == 1) { prodolzhit; }
+  esli (j == 2) { slomat; }
+  pechat("j=", j);
+}
+
+// type conversions and sleep
+pechat(stroka(123) + " -> number:" , chislo("456"));
+pechat("bool of NICHTO:", logika(NICHTO));
+pechat("sleeping 500ms..."); son(500);
+pechat("awake!");
+

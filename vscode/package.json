@@ -1,0 +1,40 @@
+{
+  "name": "hypescript-language",
+  "displayName": "HypeScript",
+  "description": "Syntax highlighting and snippets for the HypeScript language",
+  "version": "0.0.1",
+  "publisher": "hypescript",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "hypescript",
+        "aliases": ["HypeScript", "hypescript"],
+        "extensions": [".hype", ".hypescript"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "hypescript",
+        "scopeName": "source.hypescript",
+        "path": "./syntaxes/hypescript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "hypescript",
+        "path": "./snippets/hypescript.json"
+      }
+    ]
+  }
+}
+
+
+
+

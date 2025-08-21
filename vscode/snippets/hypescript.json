@@ -1,0 +1,60 @@
+{
+  "Program header": {
+    "prefix": "hype",
+    "body": ["!HYPE!"],
+    "description": "Insert !HYPE! header"
+  },
+  "Print": {
+    "prefix": "pechat",
+    "body": ["pechat(\"${1:text}\");"],
+    "description": "pechat()"
+  },
+  "Input": {
+    "prefix": "vhod",
+    "body": ["${1:var} = vhod(\"${2:prompt}\");"],
+    "description": "vhod() with assignment"
+  },
+  "If": {
+    "prefix": "esli",
+    "body": [
+      "esli (${1:condition}) {",
+      "  ${2:// code}",
+      "} inache {",
+      "  ${3:// else}",
+      "}"
+    ],
+    "description": "if/else block"
+  },
+  "While": {
+    "prefix": "poka",
+    "body": [
+      "poka (${1:condition}) {",
+      "  ${2:// code}",
+      "}"
+    ],
+    "description": "while loop"
+  },
+  "For": {
+    "prefix": "dlya",
+    "body": [
+      "dlya (${1:i = 0}; ${2:i < 10}; ${3:i = i + 1}) {",
+      "  ${4:// code}",
+      "}"
+    ],
+    "description": "for loop"
+  },
+  "Break": {
+    "prefix": "slomat",
+    "body": ["slomat;"],
+    "description": "break"
+  },
+  "Continue": {
+    "prefix": "prodolzhit",
+    "body": ["prodolzhit;"],
+    "description": "continue"
+  }
+}
+
+
+
+

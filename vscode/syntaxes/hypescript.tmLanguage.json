@@ -1,0 +1,82 @@
+{
+  "scopeName": "source.hypescript",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#keywords" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#identifiers" },
+    { "include": "#operators" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        { "name": "comment.line.double-slash.hypescript", "match": "//.*$" },
+        { "name": "comment.block.hypescript", "begin": "/\\*", "end": "\\*/" }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.hypescript",
+          "match": "\\b(esli|inache|poka|dlya|slomat|prodolzhit|prikol)\\b"
+        },
+        {
+          "name": "keyword.other.hypescript",
+          "match": "!HYPE!"
+        },
+        {
+          "name": "support.function.builtin.hypescript",
+          "match": "\\b(pechat|vhod|son|chislo|stroka|logika|ukazatel|znach|prisvoit)\\b"
+        },
+        {
+          "name": "constant.language.boolean.hypescript",
+          "match": "\\b(istina|lozh)\\b"
+        },
+        {
+          "name": "constant.language.null.hypescript",
+          "match": "\\bNICHTO\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.hypescript",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            { "name": "constant.character.escape.hypescript", "match": "\\\\." }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.hypescript",
+          "match": "\\b((0|[1-9]\\d*)(\\.\\d+)?)\\b"
+        }
+      ]
+    },
+    "identifiers": {
+      "patterns": [
+        {
+          "name": "variable.other.readwrite.hypescript",
+          "match": "\\b[_A-Za-z][_A-Za-z0-9]*\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.hypescript",
+          "match": "==|!=|<=|>=|&&|\\|\\||[=+*/%<>!;,().{}-]"
+        }
+      ]
+    }
+  }
+}
+
+
+
